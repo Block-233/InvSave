@@ -1,0 +1,35 @@
+main: me.gerry.invsave.InvSavePlugin
+description: A simple invsave plugin.
+author: Gerry
+version: 1.0.0
+name: InvSave
+api-version: "1.13"
+commands:
+  invsave:
+    permission: invsave.save
+    usage: /invsave <InvName>
+    description: InvSave Command
+    aliases:
+      - saveinv
+  invload:
+    permission: invsave.load
+    usage: /invload <InvName>
+    description: InvLoad Command
+    aliases:
+      - loadinv
+  inv:
+    permission: invsave.maincmd
+    usage: /invload <reload;help>
+    description: InvSave Main Command
+  invlist:
+    permission: invsave.list
+    usage: /invlist
+    description: InvList Command
+  invremove:
+    permission: invsave.remove
+    usage: /invremove <InvName>
+    description: InvRemove Command
+  invopengui:
+    usage: /invopengui
+    permission: invsave.opengui
+    description: InvOpenGui Command
